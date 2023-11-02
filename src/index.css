@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Barlow:wght@300;400;500;600;700;800;900&family=Bellefair&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: 'Barlow',
+sans-serif;
+font-family: 'Barlow Condensed',
+sans-serif;
+font-family: 'Bellefair',
+serif; */
+@layer base {
+    html {
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    * {
+        @apply transition-all duration-200;
+    }
+}
+
+@layer components {
+    .bg-home-desktop {
+        background-image: url('./assets/home/background-home-desktop.jpg');
+        background-size: cover;
+    }
+
+    .bg-home-tablet {
+        background-image: url('./assets/home/background-home-tablet.jpg');
+        background-size: cover;
+    }
+
+    .bg-home-mobile {
+        background-image: url('./assets/home/background-home-mobile.jpg');
+        background-size: cover;
+    }
+    .bg-destination-desktop {
+        background-image: url('./assets/destination/background-destination-desktop.jpg');
+        background-size: cover;
+    }
+
+    .bg-destination-tablet {
+        background-image: url('./assets/destination/background-destination-tablet.jpg');
+        background-size: cover;
+    }
+
+    .bg-destination-mobile {
+        background-image: url('./assets/destination/background-destination-mobile.jpg');
+        background-size: cover;
+    }
+    .bg-crew-desktop {
+        background-image: url('./assets/crew/background-crew-desktop.jpg');
+        background-size: cover;
+    }
+
+    .bg-crew-tablet {
+        background-image: url('./assets/crew/background-crew-tablet.jpg');
+        background-size: cover;
+    }
+
+    .bg-crew-mobile {
+        background-image: url('./assets/crew/background-crew-mobile.jpg');
+        background-size: cover;
+    }
+    .bg-technology-desktop {
+        background-image: url('./assets/technology/background-technology-desktop.jpg');
+        background-size: cover;
+    }
+
+    .bg-technology-tablet {
+        background-image: url('./assets/technology/background-technology-tablet.jpg');
+        background-size: cover;
+    }
+
+    .bg-technology-mobile {
+        background-image: url('./assets/technology/background-technology-mobile.jpg');
+        background-size: cover;
+    }
+    .active-slide{
+        @apply opacity-100 translate-x-0
+    }
+    .prev-slide{
+        @apply opacity-0 translate-x-[-100%]
+    }
+    .next-slide{
+        @apply opacity-0 translate-x-full
+    }
+}
+
+@media (min-width:768px) {
+    .active {
+        border-bottom: 3px solid white;
+    }
+}
